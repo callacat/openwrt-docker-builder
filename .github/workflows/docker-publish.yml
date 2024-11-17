@@ -37,7 +37,7 @@ jobs:
           file: ./Dockerfile
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ${{ secrets.DOCKER_USERNAME }}/:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}:latest
 
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@main
