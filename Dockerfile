@@ -24,8 +24,5 @@ RUN git clone https://github.com/coolsnowwolf/lede.git .
 # 初始化LEDE编译环境
 RUN ./scripts/feeds update -a && ./scripts/feeds install -a
 
-# 设置缺省配置
-COPY .config /build/.config
-
 # 默认命令：进入一个交互式shell
 CMD ["bash"]
