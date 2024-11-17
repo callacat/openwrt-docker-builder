@@ -39,7 +39,7 @@ jobs:
           file: ./Dockerfile
           push: true
           platforms: linux/amd64
-          tags: ${{ secrets.DOCKER_USERNAME }}:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/openwrt-buileder:latest
 
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@main
